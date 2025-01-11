@@ -87,7 +87,6 @@ class Program
         {
             Console.WriteLine($"You did your best, but your score {number} is too low to pass.");
         }
-
     }
 
     
