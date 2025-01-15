@@ -9,7 +9,7 @@ public class Job
 
     public void Display()
     {
-        Console.WriteLine($"this is your company info {_compang}, {_jobTitle}, {_startYear}, {_endYear}");
+        Console.WriteLine($" ({_compang}) {_jobTitle} {_startYear} - {_endYear}");
 
     }
 }

@@ -12,7 +12,7 @@ class Program
         job1._startYear = 2024;
         job1._endYear = 2025;
 
-        Console.WriteLine("Company: " + job1._compang);
+
 
 
         Job job2 = new Job();
@@ -26,6 +26,8 @@ class Program
 
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
+
+        myResume.Display();
 
         
 
