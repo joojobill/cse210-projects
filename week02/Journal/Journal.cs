@@ -45,7 +45,27 @@ public class Journal
     }
     public void LoadFromFile(string file)
     {
+        if (!File.Exists(file))
+        {
+            Console.WriteLine("file not found");
+            return;
+        }
+        _entries.Clear();
+        string[] lines = File.ReadAllLines(file);
+        foreach (string line in lines)
+        {
+            string [] parts = line.Split("|");
+            if (parts.Length == 3)
+            {
+                Entry entry = new Entry(parts[0], parts[1], parts[3]);
+                _entries.Add(entry);
+                
+                
+            }
+        }
+        Console.WriteLine($"Journal load from {file}");
 
     }
+
 
 }
