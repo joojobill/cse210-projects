@@ -65,10 +65,18 @@ class Program
         Console.WriteLine("Entry added successfully");
     }
 
-static void SaveJournal(Journal journal)
-{
-    Console.Write("Enter file to save to journal:");
-    string filename = Console.ReadLine();
-    journal.LoadFromFile(filename);
-}
+    static void SaveJournal(Journal journal)
+    {
+        Console.Write("Enter file to save to journal:");
+        string filename = Console.ReadLine();
+        journal.SaveToFile(filename);
+
+    }
+    static void LoadFromFile(Journal journal)
+    {
+        Console.WriteLine("Enter filename to load journal:");
+        string filename = Console.ReadLine();
+        journal.SaveToFile(filename);
+    }
+
 }
