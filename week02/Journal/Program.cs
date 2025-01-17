@@ -34,8 +34,8 @@ class Program
                 SaveJournal(journal);
                 break;
                  case "4":
-                    LoadJournal(journal);
-                    break;
+                LoadFromFile(journal);
+                break;
 
                 case "5":
                 Console.WriteLine("Exiting program...");
