@@ -32,7 +32,8 @@ public Reference(string Book, int Chapter, int StartVerse, int EndVerse)
 
 public string GetDisplayText()
 {
-    return _endVerse > 0 ? $"{_book} {_chapter} : {_verse}- {_endVerse}" : $"{_book} {_chapter}:{_verse}";
+    return _endVerse > 0 ? $"{_book} {_chapter}:{_verse}-{_endVerse}" : $"{_book} {_chapter}:{_verse}";
+
     
 }
 

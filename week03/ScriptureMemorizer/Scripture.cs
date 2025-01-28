@@ -8,7 +8,8 @@ public class Scripture
 public Scripture(Reference reference, string text)
 {
     _reference = reference;
-    _words = text.Split("").Select(word => new Word(word)).ToList();
+    _words = text.Split(" ").Select(word => new Word(word)).ToList();
+
 
 }
 public void HideRandomWords(int numberToHide)
@@ -17,7 +18,8 @@ public void HideRandomWords(int numberToHide)
     if (!visibleWords.Any()) return;
 
     var random = new Random();
-    foreach(var word in visibleWords.Order(_ => random.Next()).Take(numberToHide))
+    foreach(var word in visibleWords.OrderBy(_ => random.Next()).Take(numberToHide))
+
     {
         word.Hide();
     }

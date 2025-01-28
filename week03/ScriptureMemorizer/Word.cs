@@ -29,7 +29,8 @@ public bool IsHidden()
 }
 public string GetDisplayText()
 {
-    return _isHidden ? new string("_", _text.Length) : _text;
+    return _isHidden ? new string('_', _text.Length) : _text;
+
 
 }
 }

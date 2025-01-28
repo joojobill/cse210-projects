@@ -17,7 +17,7 @@ class Program
 
         while (true)
         {
-            Console.Clear();
+
             Console.WriteLine(scripture.GetDisplayText());
             Console.Write("Press Enter to continue or type 'quit' to exit: ");
             string input = Console.ReadLine().Trim().ToLower();
