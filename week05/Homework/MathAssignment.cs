@@ -13,7 +13,7 @@ public class MathAssignment : Assignment
         _problem = problem;
     }
 
-    public String GetHomeworkList()
+    public string GetHomeworkList()
     {
         return $"Section{_textBooksection} Problem {_problem}";
     }

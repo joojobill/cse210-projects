@@ -3,8 +3,8 @@ using Microsoft.Win32.SafeHandles;
 
 public class Assignment 
 {
-    private string _studentName = "";
-    private string _topic = "";
+    private string _studentName;
+    private string _topic;
 
     public Assignment(string studentName, string topic)
     {
@@ -25,6 +25,6 @@ public class Assignment
 
     public string GetSummary()
     {
-        return _studentName + "-" + _topic
+        return _studentName + "-" + _topic;
     }
 }
